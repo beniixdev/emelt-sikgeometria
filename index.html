@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Síkgeometria dolgozat – teljes áttekintő</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow">Síkgeometria dolgozat • teljes áttekintő</div>
+      <h1>Mit kell felismerned a 43 feladatnál?</h1>
+      <p class="lead">Nem 43 külön megoldást kell bemagolnod. A cél: ránézni a feladatra, felismerni a módszert, felírni az első lépést, majd csak utána számolni.</p>
+      <div class="chips"><span>Pitagorasz</span><span>Szinusztétel</span><span>Koszinusztétel</span><span>Hasonlóság</span><span>Húrnégyszög</span><span>Thalész</span><span>Terület</span><span>sin / cos / tg</span></div>
+    </div>
+    <aside>
+      <div class="eyebrow">Dolgozat-stratégia</div>
+      <h3>Először ne számolj.</h3>
+      <p>1. Rajzold be az adatokat.</p><p>2. Keresd a derékszöget, párhuzamosságot, körös tulajdonságot.</p><p>3. Válaszd ki a tételt.</p><p>4. Helyettesíts be.</p>
+      <b>A négyjegyű függvénytáblázat miatt a felismerés fontosabb, mint a képletek vak bemagolása.</b>
+    </aside>
+  </div>
+</header>
+<nav><div class="wrap nav"><a href="#fa">Döntési fa</a><a href="#kepletek">Képletek</a><a href="#abrak">Ábrák</a><a href="#feladatok">43 feladat</a><a href="#kiemelt">Gyakorlás</a><a href="#hibak">Hibák</a></div></nav>
+<main class="wrap">
+<section id="fa"><h2>1. Gyors döntési fa</h2><div class="grid" id="decision"></div></section>
+<section id="kepletek"><h2>2. Kulcsképletek</h2><div class="grid" id="formulas"></div></section>
+<section id="abrak"><h2>3. Tipikus ábrák</h2><div class="grid diagrams">
+<div class="card"><h3>Koszinusztétel</h3><svg viewBox="0 0 320 210"><polygon points="40,170 270,170 110,45"/><text x="30" y="190">A</text><text x="275" y="190">B</text><text x="103" y="35">C</text><text x="145" y="194">c</text><text x="56" y="105">b</text><text x="210" y="105">a</text><path d="M65 169 A25 25 0 0 1 78 148"/><text x="78" y="148">γ</text></svg><p>Két oldal + közbezárt szög → koszinusztétel.</p></div>
+<div class="card"><h3>Húrnégyszög</h3><svg viewBox="0 0 320 220"><circle cx="160" cy="110" r="90"/><polygon points="105,35 245,75 210,180 70,150"/><text x="93" y="28">A</text><text x="250" y="75">B</text><text x="215" y="195">C</text><text x="55" y="160">D</text><text x="120" y="62">α</text><text x="185" y="165">γ</text></svg><p>Húrnégyszögben α + γ = 180°.</p></div>
+<div class="card"><h3>Hasonlóság</h3><svg viewBox="0 0 320 220"><polygon points="25,175 145,175 65,90"/><polygon points="170,175 295,175 210,45"/><text x="55" y="130">k</text><text x="226" y="108">2k</text><text x="55" y="205">T</text><text x="224" y="205">4T</text></svg><p>Ha a hossz kétszeres, a terület négyszeres.</p></div>
+</div></section>
+<section id="feladatok"><h2>4. A 43 feladat röviden</h2><p class="lead">Keress sorszámra vagy módszerre, majd nyisd le a feladatot.</p><input id="search" placeholder="Pl. koszinusztétel, húrnégyszög, 29, hasonlóság..."><div id="tasks"></div></section>
+<section id="kiemelt"><h2>5. Amit tényleg gyakorolnék</h2><div class="card"><table><thead><tr><th>Feladat</th><th>Miért?</th><th>Fő módszer</th></tr></thead><tbody id="practice"></tbody></table></div></section>
+<section id="hibak"><h2>6. Tipikus hibák</h2><div class="grid" id="mistakes"></div></section>
+</main>
+<footer><div class="wrap"><b>Síkgeometria dolgozat – tanulói áttekintő</b><br>A feladatlap és a megoldókulcs logikája alapján.</div></footer>
+<script src="app.js"></script>
+</body></html>
